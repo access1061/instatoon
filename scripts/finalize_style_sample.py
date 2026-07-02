@@ -3,9 +3,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 
-SRC = Path(
-    r"C:\Users\Administrator\.codex\generated_images\019f2153-d964-7fc0-a241-38ba2baca8e5\ig_025f27de536adda0016a45fca93150819181a6c64ce7d26d15.png"
-)
+SRC = Path.home() / ".codex/generated_images/019f2153-d964-7fc0-a241-38ba2baca8e5/ig_025f27de536adda0016a45fca93150819181a6c64ce7d26d15.png"
 OUT_DIR = Path("assets/2026-07-02")
 FONT_REG = "C:/Windows/Fonts/NotoSansKR-VF.ttf"
 FONT_BOLD = "C:/Windows/Fonts/malgunbd.ttf"

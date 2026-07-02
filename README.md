@@ -75,7 +75,7 @@ assets/2026-07-02/01-core-idea.png
 
 ```powershell
 $env:PYTHONUTF8='1'
-python C:\Users\Administrator\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\skills\handdrawn-illustrations
-python C:\Users\Administrator\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\skills\handdrawn-illustrations2
-python C:\Users\Administrator\.codex\skills\.system\skill-creator\scripts\quick_validate.py .\skills\handdrawn-illustrations3
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\handdrawn-illustrations
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\handdrawn-illustrations2
+python "$env:USERPROFILE\.codex\skills\.system\skill-creator\scripts\quick_validate.py" .\skills\handdrawn-illustrations3
 ```
