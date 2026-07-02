@@ -1,6 +1,0 @@
-interface:
-  display_name: "손그림 본문 삽화"
-  short_description: "한국어 글을 분석해 인스타툰풍 손그림 본문 삽화를 생성"
-  default_prompt: "Use $handdrawn-illustrations 나만의 캐릭터 지침을 참고해서 이 글에 어울리는 손그림 본문 삽화를 설계하고 생성해줘."
-policy:
-  allow_implicit_invocation: true
