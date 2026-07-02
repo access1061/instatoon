@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex Image-Gen Extension - 사용 가이드</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --primary: #818cf8;
+            --secondary: #2dd4bf;
+            --accent: #f43f5e;
+            --gradient-hero: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 100px 0 80px 0;
+            background: var(--gradient-hero);
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0) 80%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            backdrop-filter: blur(5px);
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 40px 0;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* Card Style */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(129, 140, 248, 0.25);
+            border-color: rgba(129, 140, 248, 0.4);
+        }
+
+        .card-img-wrapper {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background-color: #1e1e38;
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-speed);
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .tag-toon {
+            background-color: rgba(45, 212, 191, 0.15);
+            color: var(--secondary);
+        }
+
+        .tag-illu {
+            background-color: rgba(129, 140, 248, 0.15);
+            color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .bullet-list {
+            list-style: none;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .bullet-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        /* How to Use Section */
+        .guide-box {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 60px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .guide-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .guide-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-num {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            margin-right: 20px;
+            box-shadow: 0 4px 10px rgba(129, 140, 248, 0.3);
+        }
+
+        .step-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .step-text p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* Code Block Mock */
+        .code-mock {
+            background-color: #0b0f19;
+            border-radius: 8px;
+            padding: 15px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            color: #a9b2c3;
+            margin-top: 15px;
+            border-left: 4px solid var(--primary);
+            overflow-x: auto;
+        }
+
+        .code-mock span.keyword {
+            color: #f43f5e;
+        }
+
+        .code-mock span.string {
+            color: #2dd4bf;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0b0f19;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer p {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .guide-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <span class="badge">v2.0 Extension Release</span>
+            <h1>Codex Image-Gen Extension Pack</h1>
+            <p>기존의 흑백 사인펜 선화를 넘어, 다채로운 채색 인스타툰과 고품질 2D/3D 일러스트까지 폭넓게 제작하세요. 원고를 기획하면 자동으로 스타일을 패치하여 이미지를 그립니다.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Section 1: Features -->
+        <section class="section-title">
+            <h2>다양해진 2D/3D 확장 스킬</h2>
+            <p>사용하려는 원고와 활용 목적에 맞춰 최적의 이미지 스타일을 선택할 수 있습니다.</p>
+        </section>
+
+        <div class="grid">
+            <!-- Card 1: Colored Toon -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <!-- 실제 생성된 에셋 파일 경로 반영 -->
+                    <img class="card-img" src="assets/2026-07-02/01-colored-toon-example.jpg" alt="채색 인스타툰 예시">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag tag-toon">인스타툰 / 컬러 삽화</span>
+                    <h3>Colored Insta Toon</h3>
+                    <p>부드러운 파스텔톤 배경과 명확한 잉크 펜선을 조합하여 가독성과 감성을 극대화한 채색형 인스타툰 스킬입니다.</p>
+                    <ul class="bullet-list">
+                        <li><strong>일관된 배색 규칙:</strong> 컷이 넘어가도 주인공 캐릭터의 옷과 머리색이 동일하게 유지됩니다.</li>
+                        <li><strong>정돈된 한글 말풍선:</strong> 이미지 내에 깔끔한 한국어 텍스트와 말풍선을 직접 렌더링합니다.</li>
+                        <li><strong>추천 분야:</strong> 일상툰, 직장 공감 에세이, 브랜디드 웹툰 등</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Card 2: Flat Tech Illustration -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <!-- 실제 생성된 에셋 파일 경로 반영 -->
+                    <img class="card-img" src="assets/2026-07-02/02-3d-clay-example.jpg" alt="3D 클레이 일러스트 예시">
+                </div>
+                <div class="card-content">
+                    <span class="card-tag tag-illu">2D·3D 일러스트 / 비만화형</span>
+                    <h3>Flat Tech Illustration</h3>
+                    <p>말풍선과 텍스트를 제거하고 오직 디자인 자체의 퀄리티에 집중한 기술 서적, 블로그 커버용 이미지 팩입니다.</p>
+                    <ul class="bullet-list">
+                        <li><strong>3D 클레이/토이 스타일:</strong> 트렌디하고 입체감 넘치는 미니어처 모형 화풍 지원.</li>
+                        <li><strong>Modern Flat Vector:</strong> SaaS 제품 소개에 최적화된 기하학적이고 깔끔한 그래픽.</li>
+                        <li><strong>글자 노이즈 배제:</strong> AI가 의미 없는 문자를 렌더링하지 않도록 방지하는 프롬프트 적용.</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <!-- Section 2: How to Use -->
+        <section class="section-title">
+            <h2>쉽고 강력한 사용 방법</h2>
+            <p>Codex 혹은 코딩 에이전트에게 한 줄의 명령어(Use $스킬명)만으로 간편하게 시작할 수 있습니다.</p>
+        </section>
+
+        <section class="guide-box">
+            <div class="guide-step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <h4>원고 작성 및 스킬 지정</h4>
+                    <p>작성하려는 원고를 준비한 뒤, 최상단에 사용할 확장 스킬을 명시하여 프롬프트를 보냅니다.</p>
+                    <div class="code-mock">
+                        <span class="keyword">Use</span> $colored-insta-toon<br><br>
+                        아래 원고를 3장짜리 컬러 인스타툰으로 제작해줘.<br>
+                        [원고: 오늘도 새벽 코딩을 마쳤다. 버그를 다 해결하니 뿌듯하다...]
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <h4>자동 기획 및 Forge 루프 실행</h4>
+                    <p>에이전트가 원고의 중요도를 분석하여, 자동으로 컷별 역할과 한글 말풍선 내용을 담은 <strong>Shot List</strong>를 먼저 계획합니다.</p>
+                </div>
+            </div>
+
+            <div class="guide-step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    <h4>일괄 검수 및 날짜별 저장</h4>
+                    <p>생성된 이미지의 한글 상태, 색상 일치 여부 등을 에이전트가 자체 검수한 후, 워크스페이스의 날짜별 자산 폴더로 안전하게 복사 저장합니다.</p>
+                    <div class="code-mock">
+                        💾 저장 경로 예시:<br>
+                        <span class="string">assets/2026-07-02/01-developer-morning.png</span><br>
+                        <span class="string">assets/2026-07-02/02-bug-fixed.png</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Codex Image-Gen Extension System. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #64748b;">이 가이드 문서는 Codex 및 코딩 에이전트 패치 결과를 바탕으로 동적 렌더링되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

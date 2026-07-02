@@ -1,0 +1,6 @@
+interface:
+  display_name: "손그림 본문 삽화 2"
+  short_description: "한국어 글을 분석해 기발하고 깔끔한 손그림 본문 삽화를 생성"
+  default_prompt: "Use $handdrawn-illustrations2 이 글에 어울리는 손그림 본문 삽화 몇 장을 설계하고 생성해줘."
+policy:
+  allow_implicit_invocation: true

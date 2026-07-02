@@ -1,0 +1,8 @@
+.codex_illu_making_ref/
+.codex_forge_ref/
+.agents/
+.forge/
+temp_git_repo/
+
+# Generated image outputs are intentionally kept in assets/.
+
