@@ -4,15 +4,5 @@
 .forge/
 temp_git_repo/
 
-# 로컬 스킬 및 스크립트 제외 (원격 저장소에서 제거용)
-skills/
-scripts/
-AGENTS.md
-README.md
-
-# 소개서용 이미지 2장을 제외한 기타 테스트 이미지 제외
-assets/2026-07-02/01-meta-compute-rise-toon.png
-assets/2026-07-02/02-semiconductor-drop-toon.png
-assets/2026-07-02/03-ai-chip-insight-toon.png
 
 
