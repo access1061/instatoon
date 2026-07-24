@@ -52,6 +52,7 @@
 | `handdrawn-illustrations2` | 기발한 은유 및 비유형 시각 앵커 중심 본문 삽화 | 은유/비유 강조 |
 | `colored-insta-toon` | 파스텔톤 플랫 채색 인스타툰 및 캐릭터 일관성 유지 규칙 적용 | 컬러 버전 |
 | `flat-illustration` | 비툰(No-toon)형 기술 일러스트, 3D 클레이 스타일, 감성 수채화 선화 | 기술/3D 클레이 |
+| `pixel-modern-insta-toon` | 도트/픽셀아트 감성의 현대물 치비 인스타툰. 장발·단발·안경·모자 등 상황형 악세사리 적용 | 픽셀 현대물 |
 
 ---
 

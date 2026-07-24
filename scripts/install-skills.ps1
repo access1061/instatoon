@@ -7,7 +7,8 @@ $targetRoot = Join-Path $env:USERPROFILE ".codex\skills"
 $skills = @(
     "handdrawn-illustrations",
     "handdrawn-illustrations2",
-    "handdrawn-illustrations3"
+    "handdrawn-illustrations3",
+    "pixel-modern-insta-toon"
 )
 
 New-Item -ItemType Directory -Force $targetRoot | Out-Null

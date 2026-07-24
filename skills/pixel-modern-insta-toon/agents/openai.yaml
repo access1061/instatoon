@@ -1,0 +1,6 @@
+interface:
+  display_name: "픽셀 현대 인스타툰"
+  short_description: "현대물 치비 도트 감성의 한국어 인스타툰 생성"
+  default_prompt: "Use $pixel-modern-insta-toon 아래 원고를 현대물 픽셀 인스타툰으로 작성해줘. 장수와 컷 구성은 원고 규모를 보고 판단해줘."
+policy:
+  allow_implicit_invocation: true
