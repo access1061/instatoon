@@ -3,6 +3,9 @@
 .agents/
 .forge/
 temp_git_repo/
-
+.env
+publisher/data/
+publisher/__pycache__/
+publisher/**/*.pyc
 
 
