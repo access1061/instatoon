@@ -8,7 +8,8 @@ $skills = @(
     "handdrawn-illustrations",
     "handdrawn-illustrations2",
     "handdrawn-illustrations3",
-    "pixel-modern-insta-toon"
+    "pixel-modern-insta-toon",
+    "git-account-switch"
 )
 
 New-Item -ItemType Directory -Force $targetRoot | Out-Null
