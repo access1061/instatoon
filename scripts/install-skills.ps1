@@ -22,7 +22,8 @@ foreach ($skill in $skills) {
         throw "Missing skill source: $source"
     }
 
-    Copy-Item -LiteralPath $source -Destination $target -Recurse -Force
+    New-Item -ItemType Directory -Force $target | Out-Null
+    Get-ChildItem -LiteralPath $source -Force | Copy-Item -Destination $target -Recurse -Force
     Write-Host "Installed $skill -> $target"
 }
 

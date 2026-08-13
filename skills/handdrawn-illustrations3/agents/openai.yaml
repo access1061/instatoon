@@ -1,6 +1,6 @@
 interface:
-  display_name: "손그림 본문 삽화 3"
-  short_description: "인스타툰 규모를 판단해 손그림 뉴스/본문툰 생성"
-  default_prompt: "Use $handdrawn-illustrations3 아래 원고를 인스타툰으로 작성해줘. 장수와 Forge 루프 적용 여부는 원고 규모를 보고 판단해줘."
+  display_name: "사용자 맞춤 인스타툰"
+  short_description: "참고 이미지와 사용자 의도를 우선해 인스타툰 생성"
+  default_prompt: "Use $handdrawn-illustrations3 아래 원고와 참고 이미지를 반영해 인스타툰으로 만들어줘."
 policy:
   allow_implicit_invocation: true
