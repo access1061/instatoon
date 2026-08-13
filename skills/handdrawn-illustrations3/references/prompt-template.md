@@ -31,6 +31,8 @@ Avoid only these unintended changes:
 Do not add unrequested text.
 ```
 
+인스타 피드·캐러셀이면 `{aspect ratio}`에 `exact 4:5 portrait, 1080x1350`을 넣는다. 생성 후 실제 크기는 반드시 `scripts/fit_instagram_4x5.py`로 정규화한다.
+
 ## 생성 팁
 
 - 스타일 재현이 어려우면 텍스트와 소품이 없는 간단한 스타일 앵커를 먼저 만든다.

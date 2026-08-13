@@ -1,6 +1,6 @@
 interface:
   display_name: "사용자 맞춤 인스타툰"
-  short_description: "참고 이미지와 사용자 의도를 우선해 인스타툰 생성"
-  default_prompt: "Use $handdrawn-illustrations3 아래 원고와 참고 이미지를 반영해 인스타툰으로 만들어줘."
+  short_description: "사용자 맞춤 인스타툰과 100~500자 게시 캡션 생성"
+  default_prompt: "Use $handdrawn-illustrations3 아래 원고와 참고 이미지를 반영해 인스타툰과 게시용 캡션을 만들어줘."
 policy:
   allow_implicit_invocation: true
