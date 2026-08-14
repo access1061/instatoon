@@ -48,13 +48,14 @@
 
 ## 🛠️ 제공 스킬 패키지 (`skills/`)
 
-본 저장소에는 총 5가지 특화 스킬이 포함되어 있습니다.
+본 저장소에는 총 7가지 특화 스킬이 포함되어 있습니다.
 
 | 스킬명 | 설명 | 비고 |
 | :--- | :--- | :--- |
 | **`handdrawn-illustrations3`** | **[주력]** 참고 이미지와 사용자 의도를 우선하는 인스타툰 생성, 간결한 장면 계획과 QA 포함 | ⭐️ **메인 추천** |
 | `handdrawn-illustrations` | 기본 순백 배경 검은색 사인펜 본문 삽화 | 기본형 |
 | `handdrawn-illustrations2` | 기발한 은유 및 비유형 시각 앵커 중심 본문 삽화 | 은유/비유 강조 |
+| `fantasy-party-insta-toon` | 고정 3인 판타지 파티로 만드는 컬러 4:5 정보형 캐러셀과 반존대 게시 원고 | 판타지 파티 시리즈 |
 | `colored-insta-toon` | 파스텔톤 플랫 채색 인스타툰 및 캐릭터 일관성 유지 규칙 적용 | 컬러 버전 |
 | `flat-illustration` | 비툰(No-toon)형 기술 일러스트, 3D 클레이 스타일, 감성 수채화 선화 | 기술/3D 클레이 |
 | `pixel-modern-insta-toon` | 도트/픽셀아트 감성의 현대물 치비 인스타툰. 장발·단발·안경·모자 등 상황형 악세사리 적용 | 픽셀 현대물 |
@@ -78,7 +79,7 @@ insta_toon/
 ├── scripts/                    # 전역 스킬 설치 및 보조 파이썬 스크립트
 │   ├── install-skills.ps1      # Codex 전역 경로로 스킬 복사 스크립트
 │   └── finalize_style_sample.py
-└── skills/                     # 5종 특화 Codex 스킬 패키지 모음
+└── skills/                     # 7종 특화 Codex 스킬 패키지 모음
 ```
 
 ---

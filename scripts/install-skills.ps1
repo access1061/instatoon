@@ -8,6 +8,7 @@ $skills = @(
     "handdrawn-illustrations",
     "handdrawn-illustrations2",
     "handdrawn-illustrations3",
+    "fantasy-party-insta-toon",
     "pixel-modern-insta-toon",
     "git-account-switch"
 )

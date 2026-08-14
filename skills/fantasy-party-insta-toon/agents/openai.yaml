@@ -1,0 +1,6 @@
+interface:
+  display_name: "판타지 파티 인스타툰"
+  short_description: "고정 판타지 파티로 만드는 4:5 정보형 인스타툰"
+  default_prompt: "Use $fantasy-party-insta-toon to turn this Korean manuscript into a consistent 4:5 fantasy-party Instagram carousel and posting caption."
+policy:
+  allow_implicit_invocation: true

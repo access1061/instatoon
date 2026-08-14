@@ -9,6 +9,7 @@
 보조 스킬은 사용자가 특정 스타일을 명시했을 때 선택한다.
 
 - `skills/colored-insta-toon`: 파스텔 플랫 컬러.
+- `skills/fantasy-party-insta-toon`: 프리렌 느낌의 고정 3인 판타지 파티가 진행하는 컬러 4:5 정보형 캐러셀과 게시 원고.
 - `skills/flat-illustration`: 비툰형 기술·3D·수채화 삽화.
 - `skills/handdrawn-illustrations2`: 은유형 손그림 삽화.
 - `skills/pixel-modern-insta-toon`: 픽셀아트 인스타툰.
