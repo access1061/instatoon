@@ -33,6 +33,24 @@ Do not add unrequested text.
 
 인스타 피드·캐러셀이면 `{aspect ratio}`에 `exact 4:5 portrait, 1080x1350`을 넣는다. 생성 후 실제 크기는 반드시 `scripts/fit_instagram_4x5.py`로 정규화한다.
 
+## 에피소드형 요청에만 추가
+
+```text
+Fixed protagonist:
+{이름/역할, 머리 실루엣, 얼굴, 의상과 색, 대표 소품, 성격 결함, 반복 행동}
+
+Episode beat:
+{문제 / 욕망·오해 / 반전·판단 / 해결·콜백 중 이 장의 역할}
+
+Emotional beat:
+{당황, 기대, 경계, 안도, 허탈과 이를 보여주는 표정·행동}
+
+Continuity:
+Repeat the fixed character traits exactly. Use the prior approved image only for character and style continuity; create a new composition. Convey facts through action, reaction, and short speech rather than a static row of labels. Keep the character original and do not imitate a named artist, franchise, or copyrighted character.
+```
+
+사용자가 특정 감정 연출이나 만화 문법을 원하면 `references/episode-toon.md`의 일반적 특성으로 번역해 넣는다. 사용자 참고 이미지가 있으면 그 특성과 충돌하는 기본 감정 기호나 흑백 선화를 강제하지 않는다.
+
 ## 생성 팁
 
 - 스타일 재현이 어려우면 텍스트와 소품이 없는 간단한 스타일 앵커를 먼저 만든다.
