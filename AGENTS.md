@@ -4,13 +4,13 @@
 
 ## 기본 스킬
 
-우선 `skills/handdrawn-illustrations3`을 사용한다. 이름과 관계없이 흑백 손그림에 고정하지 않으며, 사용자 지시와 참고 이미지에 맞춰 채색·선화·캐릭터·종족·구도·화면 비율을 선택한다.
+우선 `skills/fantasy-party-insta-toon`을 사용한다. 별도 스타일 지시가 없는 한국어 정보 원고와 인스타툰·캐러셀 생성 요청은 고정 3인 판타지 파티가 진행하는 컬러 4:5 형식으로 만든다.
 
-보조 스킬은 사용자가 특정 스타일을 명시했을 때 선택한다.
+사용자가 다른 스타일·캐릭터·비율을 명시하거나 일반 손그림 본문 삽화를 요청하면 해당 보조 스킬을 우선한다.
 
 - `skills/colored-insta-toon`: 파스텔 플랫 컬러.
-- `skills/fantasy-party-insta-toon`: 프리렌 느낌의 고정 3인 판타지 파티가 진행하는 컬러 4:5 정보형 캐러셀과 게시 원고.
 - `skills/flat-illustration`: 비툰형 기술·3D·수채화 삽화.
+- `skills/handdrawn-illustrations3`: 일반 손그림, 자유 참고 이미지 재현, 흑백 미니 캐릭터 본문 삽화.
 - `skills/handdrawn-illustrations2`: 은유형 손그림 삽화.
 - `skills/pixel-modern-insta-toon`: 픽셀아트 인스타툰.
 
