@@ -1,0 +1,89 @@
+{
+  "sceneId": "scene-01",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "storyBasis": "마법 연필이 힘멜의 옆모습을 선으로 그리고 제한적인 색을 더해 초상화를 완성한다.",
+  "sceneDurationMs": 10000,
+  "elements": [
+    {
+      "id": "hair-and-head-outline",
+      "label": "머리카락과 머리 윤곽",
+      "sequence": 1,
+      "narrativeRole": "초상화 마법의 시작과 인물 윤곽 제시",
+      "subtitle": "이건 초상화를 그리는 마법이야.",
+      "type": "character",
+      "region": {
+        "x": 540,
+        "y": 20,
+        "width": 680,
+        "height": 570
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 148,
+        "durationMs": 2378,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [900, 30],
+        "end": [820, 575],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "face-profile",
+      "label": "힘멜의 얼굴 옆선",
+      "sequence": 2,
+      "narrativeRole": "말하는 순서에 맞춰 힘멜의 옆모습과 표정을 완성",
+      "subtitle": "말하는 대로 연필이 힘멜의 옆모습을 그리고,",
+      "type": "character",
+      "region": {
+        "x": 735,
+        "y": 220,
+        "width": 440,
+        "height": 390
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 2964,
+        "durationMs": 3559,
+        "maskPaddingPx": 16,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [790, 310],
+        "end": [1145, 520],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "costume-and-color",
+      "label": "의상과 색 포인트",
+      "sequence": 3,
+      "narrativeRole": "선과 제한적인 색을 더해 초상화를 완성",
+      "subtitle": "선과 색을 더해 영상으로 완성해.",
+      "type": "character",
+      "region": {
+        "x": 390,
+        "y": 550,
+        "width": 830,
+        "height": 391
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 6944,
+        "durationMs": 2556,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [760, 565],
+        "end": [980, 920],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}
