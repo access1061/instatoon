@@ -1,0 +1,11 @@
+{
+  "name": "fern-lookbook-shorts-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit": "powershell -ExecutionPolicy Bypass -File scripts/audit-toolchain.ps1"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
+  }
+}
