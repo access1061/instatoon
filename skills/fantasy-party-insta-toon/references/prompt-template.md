@@ -22,6 +22,9 @@ Core fact:
 Scene:
 {1~2개의 큰 컷, 캐릭터 행동, 노트북·카드·표 등 소품 배치}
 
+Optional split layout:
+If the user selected a top-and-bottom split layout, divide this single image into exactly two clearly separated scene panels: the top panel and the bottom panel. Keep both panels inside the same 4:5 image; do not generate them as separate images. Place the question, problem, or premise in the top panel and the explanation, reaction, or conclusion in the bottom panel. If the user did not select this layout, use the normal 1-to-2-scene composition without forcing a top-and-bottom split.
+
 Text to render exactly:
 - Speech 1: "{짧은 문구}"
 - Speech 2: "{짧은 문구}"
