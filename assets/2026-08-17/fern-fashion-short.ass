@@ -1,0 +1,27 @@
+[Script Info]
+Title: Fern Fashion Short Japanese Vertical Titles
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Vertical,Yu Gothic,58,&H00382B52,&H00382B52,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,4,0,1,1.5,0,5,0,0,0,1
+Style: Highlight,Yu Gothic,64,&H00C98776,&H00C98776,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,5,0,1,1.5,0,5,0,0,0,1
+Style: Label,Yu Gothic,25,&H00685A78,&H00685A78,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,5,0,1,1,0,5,0,0,0,1
+Style: Sample,Yu Gothic,20,&H0090819A,&H0090819A,&H00FFFFFF,&H00000000,0,0,0,0,100,100,3,0,1,1,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.15,0:00:01.30,Label,,0,0,0,,{\pos(900,175)\fad(180,250)}ISSUE 08
+Dialogue: 0,0:00:00.50,0:00:03.70,Vertical,,0,0,0,,{\pos(930,470)\fad(220,250)}似\N合\Nう\N色\Nは
+Dialogue: 0,0:00:01.20,0:00:03.70,Vertical,,0,0,0,,{\pos(825,550)\fad(220,250)}静\Nか\Nに\N私\Nを
+Dialogue: 0,0:00:02.10,0:00:03.70,Highlight,,0,0,0,,{\pos(710,600)\fad(180,250)}強\Nく\Nす\Nる
+Dialogue: 0,0:00:03.72,0:00:04.35,Label,,0,0,0,,{\pos(855,1040)\fad(100,160)}DEEP WINTER
+Dialogue: 0,0:00:04.30,0:00:07.50,Vertical,,0,0,0,,{\pos(930,490)\fad(200,260)}今\N日\Nは
+Dialogue: 0,0:00:05.05,0:00:07.50,Vertical,,0,0,0,,{\pos(825,550)\fad(200,260)}少\Nし\Nだ\Nけ
+Dialogue: 0,0:00:06.00,0:00:07.62,Highlight,,0,0,0,,{\pos(710,610)\fad(180,320)}大\N胆\Nに
+Dialogue: 0,0:00:07.45,0:00:08.00,Label,,0,0,0,,{\pos(835,1570)\fad(120,220)}QUIET MAGIC / FERN
+Dialogue: 0,0:00:00.20,0:00:07.80,Sample,,0,0,0,,{\pos(165,1815)\fad(180,220)}AI CONCEPT SAMPLE

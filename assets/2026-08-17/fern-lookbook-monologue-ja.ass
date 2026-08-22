@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Main,Yu Mincho,55,&H0017161C,&H0017161C,&H00F2EEE5,&H50000000,0,0,0,0,100,100,2,0,1,2.2,0,8,90,74,310,1
+Style: Mid,Yu Mincho,57,&H0017161C,&H0017161C,&H00F2EEE5,&H50000000,0,0,0,0,100,100,1,0,1,2.2,0,6,500,70,270,1
+Style: Final,Yu Mincho,59,&H0017161C,&H0017161C,&H00F2EEE5,&H50000000,0,0,0,0,100,100,1,0,1,2.2,0,6,510,70,310,1
+Style: Lock,Georgia,44,&H009C4A18,&H009C4A18,&H00F2EEE5,&H30000000,-1,0,0,0,100,100,5,0,1,1.5,0,2,80,80,150,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 10,0:00:00.18,0:00:02.28,Main,,0,0,0,,{\an8\pos(944,420)\fs72\c&H17161C&\3c&HF2EEE5&\bord3\fad(130,150)}派\N手\Nな\N装\Nい\Nは\N、
+Dialogue: 10,0:00:00.18,0:00:02.28,Main,,0,0,0,,{\an8\pos(846,485)\fs76\c&H7D3255&\3c&HF2EEE5&\bord3\fad(160,150)}少\Nし\N苦\N手\Nで\Nす\N。
+Dialogue: 10,0:00:02.62,0:00:05.92,Mid,,0,0,0,,{\an8\pos(960,350)\fs70\c&H17161C&\3c&HF2EEE5&\bord3\fad(140,170)}で\Nも\N、\Nこ\Nの\N深\Nい\N紫\Nと
+Dialogue: 10,0:00:02.62,0:00:05.92,Mid,,0,0,0,,{\an8\pos(865,430)\fs72\c&H7D3255&\3c&HF2EEE5&\bord3\fad(165,170)}黒\Nな\Nら\N…\N…
+Dialogue: 10,0:00:02.62,0:00:05.92,Mid,,0,0,0,,{\an8\pos(770,500)\fs76\b1\c&H17161C&\3c&HF2EEE5&\bord3\fad(190,170)}悪\Nく\Nあ\Nり\Nま\Nせ\Nん\N。
+Dialogue: 10,0:00:06.30,0:00:09.43,Final,,0,0,0,,{\an8\pos(960,360)\fs70\c&H17161C&\3c&HF2EEE5&\bord3\fad(140,180)}静\Nか\Nな\N魔\N法\Nほ\Nど\N、
+Dialogue: 10,0:00:06.30,0:00:09.43,Final,,0,0,0,,{\an8\pos(860,470)\fs78\b1\c&H9C4A18&\3c&HF2EEE5&\bord3\fad(170,180)}強\Nく\N輝\Nく
+Dialogue: 10,0:00:06.30,0:00:09.43,Final,,0,0,0,,{\an8\pos(765,500)\fs72\c&H17161C&\3c&HF2EEE5&\bord3\fad(200,180)}も\Nの\Nで\Nす\Nか\Nら\N。
+Dialogue: 20,0:00:09.43,0:00:09.97,Lock,,0,0,0,,{\fad(100,170)}FERN / QUIET MAGIC

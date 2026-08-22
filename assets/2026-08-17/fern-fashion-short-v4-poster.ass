@@ -1,0 +1,69 @@
+[Script Info]
+Title: Fern Fashion Short Refer1 Poster Style V4
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; Top Masthead (Huge poster headline spanning width like DRAGON BALL)
+Style: TopMasthead,Bahnschrift,135,&H00FFFFFF,&H00FFFFFF,&H00321542,&H60100818,-1,0,0,0,95,100,14,0,1,3.5,2,5,0,0,0,1
+Style: TopQuote,Bahnschrift,18,&H00381A48,&H00381A48,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,2,0,1,1,0,5,0,0,0,1
+
+; Left Big Kanji Typography (like 人造人間 18号)
+Style: PosterVerticalKanji,Yu Gothic,68,&H00301440,&H00301440,&H00FFFFFF,&H40100818,-1,0,0,0,100,100,4,0,1,2,1,5,0,0,0,1
+Style: PosterVerticalNum,Bahnschrift,95,&H00683090,&H00683090,&H00FFFFFF,&H40100818,-1,0,0,0,100,100,4,0,1,2,1,5,0,0,0,1
+
+; Spoken Vertical Dialogue (smoothly appearing in center-right safe area)
+Style: VoiceVertical,Yu Gothic,64,&H00FFFFFF,&H00FFFFFF,&H00321542,&H60000000,-1,0,0,0,100,100,4,0,1,2.5,1.5,5,0,0,0,1
+Style: VoiceHighlight,Yu Gothic,72,&H00F0D8FF,&H00F0D8FF,&H002E143E,&H80100818,-1,0,0,0,100,100,6,0,1,3,2,5,0,0,0,1
+
+; Interlude Quote (3.72 - 4.30s)
+Style: Interlude,Bahnschrift,26,&H00D49CFF,&H00D49CFF,&H00321542,&H80100818,-1,0,0,0,100,100,5,0,1,2,1,5,0,0,0,1
+
+; Bottom / Right Spec & Barcode Box (like Android No.18 Card)
+Style: SpecCardTitle,Bahnschrift,22,&H00FFFFFF,&H00FFFFFF,&H00321542,&H00000000,-1,0,0,0,100,100,3,0,1,1.5,0,5,0,0,0,1
+Style: SpecCardBody,Bahnschrift,16,&H00381A48,&H00381A48,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,2,0,1,1,0,5,0,0,0,1
+Style: SpecBarcode,Bahnschrift,22,&H00301440,&H00301440,&H00FFFFFF,&H00000000,-1,0,0,0,120,100,1,0,1,1,0,5,0,0,0,1
+
+; Bottom Main Logo Signature (like Android 18 script at bottom)
+Style: BottomLogo,Bahnschrift,76,&H00421A58,&H00421A58,&H00FFFFFF,&H40100818,-1,0,0,0,105,100,8,0,1,2.5,1,5,0,0,0,1
+Style: BottomSub,Bahnschrift,20,&H00FFFFFF,&H00FFFFFF,&H00321542,&H00000000,-1,0,0,0,100,100,6,0,1,1.5,0,5,0,0,0,1
+Style: SampleTag,Bahnschrift,18,&H00988A9E,&H00988A9E,&H00FFFFFF,&H00000000,0,0,0,0,100,100,3,0,1,1,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+; === 1. TOP MASTHEAD (Spanning across top like DRAGON BALL) ===
+Dialogue: 0,0:00:00.10,0:00:08.00,TopMasthead,,0,0,0,,{\pos(540,165)\fad(180,260)}FRIEREN
+Dialogue: 0,0:00:00.18,0:00:08.00,TopQuote,,0,0,0,,{\pos(855,270)\fad(180,260)}QUIET MAGIC. UNWAVERING WILL.\NCOLD PALETTE, DEEP POWER.
+
+; === 2. LEFT VERTICAL KANJI (like 人造人間 18号) ===
+Dialogue: 0,0:00:00.25,0:00:08.00,PosterVerticalKanji,,0,0,0,,{\pos(75,540)\fad(200,260)}一\N級\N魔\N法\N使\Nい
+Dialogue: 0,0:00:00.30,0:00:08.00,PosterVerticalNum,,0,0,0,,{\pos(75,980)\fad(200,260)}08
+
+; === 3. SPOKEN VERTICAL DIALOGUE (Right Side) ===
+; Part 1: (0.50s - 3.70s)
+Dialogue: 0,0:00:00.50,0:00:03.70,VoiceVertical,,0,0,0,,{\pos(940,550)\fad(200,220)}似\N合\Nう\N色\Nは
+Dialogue: 0,0:00:01.15,0:00:03.70,VoiceVertical,,0,0,0,,{\pos(830,630)\fad(200,220)}静\Nか\Nに\N私\Nを
+Dialogue: 0,0:00:02.05,0:00:03.70,VoiceHighlight,,0,0,0,,{\pos(710,690)\fad(180,220)}強\Nく\Nす\Nる
+
+; Interlude Quote (3.72s - 4.30s)
+Dialogue: 0,0:00:03.72,0:00:04.30,Interlude,,0,0,0,,{\pos(830,1020)\fad(120,150)}COLOR DEFINES THE SOUL
+
+; Part 2: (4.30s - 7.55s)
+Dialogue: 0,0:00:04.30,0:00:07.55,VoiceVertical,,0,0,0,,{\pos(940,570)\fad(200,250)}今\N日\Nは
+Dialogue: 0,0:00:05.00,0:00:07.55,VoiceVertical,,0,0,0,,{\pos(830,650)\fad(200,250)}少\Nし\Nだ\Nけ
+Dialogue: 0,0:00:05.95,0:00:07.60,VoiceHighlight,,0,0,0,,{\pos(710,710)\fad(180,300)}大\N胆\Nに
+
+; === 4. RIGHT SPEC CARD & BARCODE (like Android 18 card) ===
+Dialogue: 0,0:00:00.35,0:00:07.80,SpecCardTitle,,0,0,0,,{\pos(925,1420)\fad(220,250)}FERN  NO.08
+Dialogue: 0,0:00:00.40,0:00:07.80,SpecCardBody,,0,0,0,,{\pos(925,1460)\fad(220,250)}SPECIAL EDITION LOOKBOOK
+Dialogue: 0,0:00:00.40,0:00:07.80,SpecCardBody,,0,0,0,,{\pos(925,1490)\fad(220,250)}DEEP & COOL WINTER
+Dialogue: 0,0:00:00.45,0:00:07.80,SpecBarcode,,0,0,0,,{\pos(925,1535)\fad(220,250)}||| | || ||||| | |||
+
+; === 5. BOTTOM MAIN LOGO SIGNATURE ===
+Dialogue: 0,0:00:00.20,0:00:07.80,BottomLogo,,0,0,0,,{\pos(540,1780)\fad(220,250)}Fern
+Dialogue: 0,0:00:00.25,0:00:07.80,BottomSub,,0,0,0,,{\pos(540,1835)\fad(220,250)}DEEP WINTER STREET EDITION  ★ ★ ★
+Dialogue: 0,0:00:00.20,0:00:07.80,SampleTag,,0,0,0,,{\pos(180,1875)\fad(180,220)}AI CONCEPT SAMPLE
