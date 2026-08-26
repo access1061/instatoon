@@ -5,6 +5,8 @@ $skillsRoot = Join-Path $workspace "skills"
 $targetRoot = Join-Path $env:USERPROFILE ".codex\skills"
 
 $skills = @(
+    "colored-insta-toon",
+    "flat-illustration",
     "handdrawn-illustrations",
     "handdrawn-illustrations2",
     "handdrawn-illustrations3",
