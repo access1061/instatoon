@@ -1,5 +1,11 @@
 # Insta Toon Codex Workspace
 
+## Codex 시작 시 GitHub 계정 고정
+
+- Codex가 이 워크스페이스에서 새 세션을 시작하면 다른 작업보다 먼저 `gh auth switch -u access1061`을 실행한다.
+- 이어서 `gh auth status`를 실행해 `access1061`이 활성 계정인지 확인한다.
+- 전환 또는 확인에 실패하면 실패 사실을 사용자에게 알리고, GitHub 인증이 필요한 작업을 진행하지 않는다.
+
 이 작업 폴더는 한국어 원고와 사용자 참고 이미지를 인스타툰·본문 삽화로 각색하는 환경이다.
 
 ## 기본 스킬
