@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fern Lookbook Shorts"
+  short_description: "레이어형 9:16 Fern 룩북과 TTS 쇼츠 제작"
+  default_prompt: "Use $fern-lookbook-shorts to create a layered 9:16 Fern lookbook and prepare it for a TTS short."

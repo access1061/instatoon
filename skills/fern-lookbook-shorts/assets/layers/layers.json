@@ -1,0 +1,8 @@
+{
+  "canvas": {"width": 1080, "height": 1920, "fps": 30},
+  "layers": [
+    {"id": "background", "file": "background-1080x1920.png", "z": 0, "opacity": 1, "motion": {"scale": [1.02, 1.035], "x": [0, -8], "y": [0, 8]}},
+    {"id": "character", "file": "character-1080x1920.png", "z": 20, "opacity": 1, "motion": {"scale": [1, 1.012], "x": [0, 4], "y": [0, -3]}},
+    {"id": "overlay", "file": "overlay.png", "z": 40, "opacity": 1, "motion": {"scale": [1, 1], "x": [0, 0], "y": [0, 0]}}
+  ]
+}

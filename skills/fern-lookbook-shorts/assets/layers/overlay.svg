@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,'Noto Sans KR',sans-serif}
+    </style>
+  </defs>
+  <g fill="none" stroke="#184A9C" stroke-width="2" opacity=".72">
+    <path d="M42 92h180M930 86h94v1490h-94"/><path d="M42 1760h240M798 1760h226"/>
+    <circle cx="972" cy="320" r="9"/><circle cx="972" cy="320" r="3" fill="#184A9C"/>
+  </g>
+  <g class="sans" fill="#17161C">
+    <text x="660" y="150" font-size="24" letter-spacing="8">LOOKBOOK / 08</text>
+  </g>
+  <g class="serif" fill="#184A9C">
+    <text x="54" y="1810" font-size="118" font-style="italic">FERN</text>
+  </g>
+  <g class="sans" fill="#55327D">
+    <text x="60" y="1854" font-size="18" letter-spacing="6">EDITORIAL CHARACTER STUDY</text>
+  </g>
+</svg>

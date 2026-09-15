@@ -1,0 +1,48 @@
+[Script Info]
+Title: Fern Fashion Short Japanese Vertical Titles V3 Editorial Masthead
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Masthead,Bahnschrift,152,&H00FFFFFF,&H00FFFFFF,&H00321542,&H80100818,-1,0,0,0,108,100,12,0,1,4,2,5,0,0,0,1
+Style: HeaderTag,Bahnschrift,24,&H00FFFFFF,&H00FFFFFF,&H00381A48,&H60100818,-1,0,0,0,100,100,4,0,1,2,1,5,0,0,0,1
+Style: HeaderTitle,Bahnschrift,24,&H00F0D8FF,&H00F0D8FF,&H00381A48,&H60100818,-1,0,0,0,100,100,5,0,1,2,1,5,0,0,0,1
+Style: VerticalText,Yu Gothic,66,&H00FFFFFF,&H00FFFFFF,&H00381A48,&H60000000,-1,0,0,0,100,100,4,0,1,2.5,1.5,5,0,0,0,1
+Style: VerticalHighlight,Yu Gothic,76,&H00F0D8FF,&H00F0D8FF,&H002E143E,&H80100818,-1,0,0,0,100,100,6,0,1,3,2,5,0,0,0,1
+Style: Interlude,Bahnschrift,28,&H00D49CFF,&H00D49CFF,&H00381A48,&H80100818,-1,0,0,0,100,100,5,0,1,2,1,5,0,0,0,1
+Style: SpecLabel,Bahnschrift,24,&H00FFFFFF,&H00FFFFFF,&H00381A48,&H60000000,-1,0,0,0,100,100,3,0,1,1.5,1,5,0,0,0,1
+Style: SpecValue,Bahnschrift,24,&H00D49CFF,&H00D49CFF,&H00381A48,&H60000000,-1,0,0,0,100,100,3,0,1,1.5,1,5,0,0,0,1
+Style: Sample,Bahnschrift,20,&H00C0B4CC,&H00C0B4CC,&H00381A48,&H00000000,0,0,0,0,100,100,3,0,1,1,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+; --- Header Top Metadata Bar ---
+Dialogue: 0,0:00:00.15,0:00:08.00,HeaderTag,,0,0,0,,{\pos(180,85)\fad(180,250)}ISSUE // 08
+Dialogue: 0,0:00:00.20,0:00:08.00,HeaderTitle,,0,0,0,,{\pos(850,85)\fad(180,250)}DEEP WINTER LOOKBOOK
+
+; --- Big Magazine Masthead Title above Fern's head ---
+Dialogue: 0,0:00:00.10,0:00:08.00,Masthead,,0,0,0,,{\pos(540,245)\fad(200,280)}FERN
+
+; --- Part 1: Dialogue (0.50s - 3.70s) ---
+Dialogue: 0,0:00:00.50,0:00:03.70,VerticalText,,0,0,0,,{\pos(935,530)\fad(200,220)}似\N合\Nう\N色\Nは
+Dialogue: 0,0:00:01.15,0:00:03.70,VerticalText,,0,0,0,,{\pos(825,610)\fad(200,220)}静\Nか\Nに\N私\Nを
+Dialogue: 0,0:00:02.05,0:00:03.70,VerticalHighlight,,0,0,0,,{\pos(705,670)\fad(180,220)}強\Nく\Nす\Nる
+
+; --- Interlude Pause (3.72s - 4.30s) ---
+Dialogue: 0,0:00:03.72,0:00:04.30,Interlude,,0,0,0,,{\pos(840,990)\fad(120,150)}SILENT CONFIDENCE
+
+; --- Part 2: Dialogue (4.30s - 7.55s) ---
+Dialogue: 0,0:00:04.30,0:00:07.55,VerticalText,,0,0,0,,{\pos(935,550)\fad(200,250)}今\N日\Nは
+Dialogue: 0,0:00:05.00,0:00:07.55,VerticalText,,0,0,0,,{\pos(825,630)\fad(200,250)}少\Nし\Nだ\Nけ
+Dialogue: 0,0:00:05.95,0:00:07.60,VerticalHighlight,,0,0,0,,{\pos(705,690)\fad(180,300)}大\N胆\Nに
+
+; --- Lower Left Spec Tags (Fade in from 0.4s to end) ---
+Dialogue: 0,0:00:00.40,0:00:07.80,SpecLabel,,0,0,0,,{\pos(220,1660)\fad(220,250)}PALETTE : {\rSpecValue}DEEP & COOL WINTER
+Dialogue: 0,0:00:00.45,0:00:07.80,SpecLabel,,0,0,0,,{\pos(220,1705)\fad(220,250)}STYLE   : {\rSpecValue}OVERSIZED STREET TECH
+
+; --- Bottom AI Notice ---
+Dialogue: 0,0:00:00.20,0:00:07.80,Sample,,0,0,0,,{\pos(180,1835)\fad(180,220)}AI CONCEPT SAMPLE
