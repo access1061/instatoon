@@ -100,6 +100,10 @@ PowerShell을 열고 프로젝트 루트에서 아래 스크립트를 실행합�
 
 ## 🚀 사용 방법
 
+### Paseo Agent Team
+
+원고·제작·독립 Visual QA 역할을 분리하는 팀 설정은 [`.agents/teams/instatoon.json`](.agents/teams/instatoon.json)에 있습니다. [설치와 실행 순서](docs/agent-team-workflow.md)를 따르세요. 로컬 CLI는 `scripts/paseo.ps1`, 설치된 웹 UI는 `http://127.0.0.1:6799`입니다. 이미지 생성 도구 연결 여부는 제작 역할에서 확인하며, 일반 단일 세션의 기존 흐름도 유지합니다.
+
 ### 1. 인스타툰 생성 요청 (기본)
 
 Codex 프롬프트에 작성하고자 하는 원고와 함께 요청합니다:

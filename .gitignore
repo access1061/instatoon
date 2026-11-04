@@ -1,6 +1,11 @@
 .codex_illu_making_ref/
 .codex_forge_ref/
-.agents/
+.agents/*
+!.agents/teams/
+.agents/teams/*
+!.agents/teams/instatoon.json
+.tools/
+.paseo-local/
 .forge/
 temp_git_repo/
 .env

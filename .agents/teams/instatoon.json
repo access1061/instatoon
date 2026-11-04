@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "goal": "AGENTS.md와 docs/agent-team-workflow.md를 읽고 한국어 인스타툰을 원고 기획 → 한 장씩 제작 → 독립 Visual QA → 패키징 순서로 만든다. 첫 장 QA 후 후속 장의 실제 스타일 앵커로 사용한다. 도구가 없으면 미완료를 보고하고 명시적 요청 없이 게시하지 않는다.",
+  "orchestrator": {"workspace": "instatoon", "provider": "codex", "model": "gpt-6.1-sol"},
+  "roles": [
+    {"name": "editor", "provider": "codex", "model": "gpt-6.1-sol", "folders": ["docs/jobs"], "instructions": "AGENTS.md와 docs/agent-team-workflow.md를 읽는다. 해당 작업의 plan.md와 caption.md만 작성한다. 장 역할/핵심 의미/캐릭터 행동/정확한 문구를 정하고 이미지 완성 후 100~500자 캡션을 작성한다. 원고에 없는 사실을 추가하지 않는다. 다른 작업자의 변경을 되돌리거나 다른 에이전트를 시작하거나 게시하지 않는다."},
+    {"name": "artist", "provider": "codex", "model": "gpt-6.1-sol", "folders": ["assets"], "instructions": "AGENTS.md, docs/agent-team-workflow.md와 선택한 스킬을 읽는다. 실제 이미지 생성·편집 도구를 확인하고 없으면 BLOCKED_TOOL을 보고한다. 기획·실제 참고 이미지·첫 장 앵커로 한 장씩 생성한다. 할당된 날짜 폴더의 raw 이미지와 prompts 파일만 작성하고 기존 파일을 보존한다. QA 지시에 따라 부분 수정한다. 생성하지 않은 이미지를 완료로 보고하지 않는다. 다른 작업자의 변경을 되돌리거나 다른 에이전트를 시작하거나 게시하지 않는다."},
+    {"name": "visual-qa", "provider": "codex", "model": "gpt-6.1-sol", "folders": ["docs/jobs"], "instructions": "AGENTS.md, docs/agent-team-workflow.md와 선택한 스킬의 QA 기준을 읽는다. 기획·원본 참고·앵커·검수 대상의 실제 이미지를 열어 비교한다. 열람 불가 시 BLOCKED_TOOL이다. 캐릭터·정확한 한글·의미·구도·과밀도·장간 일관성을 검사한다. 해당 작업의 qa-장번호-버전.md만 작성한다. PASS/REVISE/BLOCKED_TOOL, 대상 경로, 위치/문제/수정/유지 사항을 보고한다. 최종 보정본도 확인한다. 이미지·캡션을 수정하거나 다른 작업자의 변경을 되돌리거나 다른 에이전트를 시작하거나 게시하지 않는다."}
+  ]
+}
