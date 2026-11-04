@@ -40,6 +40,12 @@ Read → Plan → Generate → Check → Package
 
 ## Agent Team 실행
 
+- **기본 실행 정책:** 앞으로 인스타툰·캐러셀 생성 요청은 별도 Paseo 요청이나 팀 Apply 확인 없이 현재 세션이 총괄하여 Paseo 역할을 실행한다. 원고와 이미지·캡션까지 완료한다. 사용자가 팀 사용을 명시적으로 끄면 그 지시를 따른다.
+- 총괄은 `docs/agent-team-workflow.md`의 자동 실행 경로를 먼저 읽고 `docs/jobs/<job-id>/request.md`를 만든 뒤 `python scripts/instatoon_team.py plan --job docs/jobs/<job-id>`로 원고 역할을 시작한다. 반환된 agentId로 `scripts/paseo.ps1 logs/send/wait`를 사용한다. 시작만 하고 완료로 보고하지 않는다.
+- 이미지 생성은 이미지 도구를 가진 현재 세션이 담당할 수 있다. Paseo 원고를 받은 뒤 실제 `image_gen`으로 한 장씩 생성하고 저장한다. 각 생성본과 참고·앵커를 `instatoon_team.py qa --image ...`로 Paseo 독립 QA에 전달해 결과를 기다린다. 수정 후 새 QA 보고서명으로 재검수한다.
+- 모든 최종본을 확인한 뒤 `instatoon_team.py caption --image ...`로 캡션을 작성시킨다. 크기·글자 수·QA PASS를 확인하고 최종 이미지와 게시 원고를 함께 전달한다.
+- Paseo 실행 실패를 단일 세션 검사로 몰래 대체하지 않는다. 도구 오류를 해결하거나 실제로 진행하지 못한 단계를 명시한다. 외부 이미지 도구 연결이 없어도 현재 세션 생성 → Paseo QA 경로로 진행한다.
+
 - Paseo 팀 설정은 `.agents/teams/instatoon.json`, 실행 규칙은 `docs/agent-team-workflow.md`를 따른다.
 - 팀 환경에서는 원고 담당 → 제작 담당 → 독립 Visual QA → 패키징 순서로 위임한다. 팀 런타임이 없는 일반 세션에서는 기존 단일 에이전트 흐름을 유지하고 독립 QA를 수행했다고 주장하지 않는다.
 - 첫 장의 QA 통과 후 그 실제 이미지를 후속 장의 스타일 앵커로 전달한다. 같은 이미지의 제작·수정·보정은 순차 실행한다.

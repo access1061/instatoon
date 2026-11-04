@@ -1,5 +1,32 @@
 # Insta Toon Agent Team
 
+## 기본 자동 실행 경로
+
+인스타툰 생성 요청은 현재 대화가 총괄한다. 별도 Apply나 사용자에게 팀 사용을 다시 물을 필요 없이 아래 경로를 실행한다. 팀 파일의 provider/model/instructions를 실행 도구가 직접 읽으므로 플러그인 UI에서 총괄을 시작하지 않아도 동일 역할 정의를 사용한다.
+
+1. 날짜·주제별 `docs/jobs/<job-id>/request.md`를 만든다. 원고·요구사항·실제 참고 경로·선택한 스타일을 담는다.
+   기본 스킬은 fantasy-party-insta-toon이다. 다른 스타일을 선택했으면 모든 역할 실행에 `--skill <선택한-스킬-폴더명>`을 전달한다.
+2. `python scripts/instatoon_team.py plan --job docs/jobs/<job-id>`를 실행한다. 반환 agentId로 로그와 완료 상태를 확인하고 plan.md가 실제 작성됐는지 읽는다.
+3. 현재 세션이 선택한 이미지 스킬을 읽고 plan.md에 따라 image_gen으로 실제 이미지를 생성·저장한다. Paseo 원고 담당의 제안이 사용자 지시와 다르면 바로잡는다.
+4. request.md에 검수 대상·참고·앵커 경로와 각각의 역할을 명시한 뒤 아래 QA 명령을 실행한다. 이미지 인수를 반복해 원본 참고와 앵커도 실제 첨부한다. 결과 보고서의 PASS를 확인하기 전 다음 장을 확정하지 않는다.
+5. 수정은 현재 세션의 이미지 편집 도구로 수행하고 새 버전 파일과 새 보고서명을 사용한다. 장당 기본 2회 수정 후 남은 오류는 미완료로 보고한다.
+6. 모든 장의 크기 보정과 최종 QA 후 caption 명령에 완성본을 모두 첨부한다. 실제 캡션 파일을 읽고 100~500자를 검사한 뒤 최종 경로로 복사한다. 이미지와 게시 원고를 함께 전달한다.
+
+```powershell
+python scripts/instatoon_team.py check
+python scripts/instatoon_team.py plan --job docs/jobs/<job-id>
+python scripts/instatoon_team.py qa --job docs/jobs/<job-id> --report qa-01-v1.md --image assets/YYYY-MM-DD/raw/01-topic.png --image refer/reference.png
+python scripts/instatoon_team.py caption --job docs/jobs/<job-id> --image assets/YYYY-MM-DD/01-topic.png
+.\scripts\paseo.ps1 wait <agent-id> --timeout 45
+.\scripts\paseo.ps1 logs <agent-id> --tail 10
+```
+
+완료 대기는 45초 이하 단위로 진행하면서 사용자에게 진행 상황을 알린다. 작업 실패·중단·권한 거부 시 로그를 확인하고 원인을 해결하며 생성이나 QA를 완료로 꾸미지 않는다. 런처는 역할만 시작하므로 호출 세션이 반드시 결과 파일과 판정을 읽어 다음 단계를 진행해야 한다.
+
+역할이 파일 도구 오류로 저장하지 못했지만 최종 응답에 완전한 원고/QA/캡션을 반환했다면 총괄이 해당 응답을 지정 파일에 저장하고 다시 읽어 확인한다. QA가 실제 이미지를 열지 못한 경우에는 이 방법으로 PASS를 만들어서는 안 된다. 런처는 원고와 실행 지침을 프롬프트에 직접 전달하고 Node로 실행하여 Windows 배치 파일의 여러 줄 인수 손실을 피한다.
+
+Paseo 런타임의 읽기 전용 도구 점검에서 image_gen__imagegen과 view_image가 보고되었다. 실제 이미지 생성 호출의 성공까지 검증한 것은 아니다. 기본 경로는 현재 세션의 확실히 사용 가능한 이미지 도구를 사용한다. 이미지 도구가 있는 Paseo 제작 역할을 쓰려면 아래 완전 팀 경로로도 진행할 수 있다.
+
 ## 시작
 
 프로젝트 전용 CLI: `scripts/paseo.ps1`. 팀: `.agents/teams/instatoon.json`.
@@ -30,7 +57,7 @@ npm.cmd install --prefix .tools/paseo @getpaseo/cli@0.15.0 --no-audit --no-fund
 
 기본 provider/model은 codex/gpt-6.1-sol이다. 호스트에서 사용 가능해야 한다. 불가능하면 임의 대체하지 말고 팀 패널에서 실제 모델을 선택한다. Paseo에서 이 프로젝트와 `instatoon` 워크스페이스를 열고 Agent teams에서 기존 팀 파일을 확인하고 Apply한다. JSON만으로 팀이 자동 시작되지는 않는다. workspace 제목은 팀의 orchestrator.workspace와 일치해야 한다.
 
-## 총괄 실행 순서
+## Paseo UI에서 총괄을 시작하는 완전 팀 경로
 
 1. AGENTS.md와 선택한 스킬을 읽고 사용자 지시를 우선한다. 작업 ID `<날짜>-<topic>`를 정하며 기존 작업이 있으면 -v2 등을 붙인다.
 2. `docs/jobs/<job-id>/request.md`에 원고, 출처, 장수, 스타일, 정확한 문구, 실제 참고 경로와 참조 범위를 저장한다. 원본은 보존한다.

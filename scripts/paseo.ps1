@@ -8,5 +8,6 @@ $env:PATH = (Split-Path -Parent $paseoCli) + ';' + $env:PATH
 if (-not $env:PASEO_HOME -and -not $env:PASEO_HOST -and $args -notcontains '--home' -and $args -notcontains '--host') {
     $env:PASEO_HOME = Join-Path $projectRoot '.paseo-local'
 }
-& $paseoCli @args
+$paseoEntry = Join-Path $projectRoot '.tools/paseo/node_modules/@getpaseo/cli/bin/paseo'
+& node $paseoEntry @args
 exit $LASTEXITCODE
