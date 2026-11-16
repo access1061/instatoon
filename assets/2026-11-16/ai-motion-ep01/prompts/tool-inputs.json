@@ -1,0 +1,79 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": false,
+  "records": [
+    {
+      "file": "raw/01-course-question.png",
+      "prompt": "Create ONE finished Korean Instagram comic cover illustration, exact 4:5 portrait intended 1080x1350, illustration-story. Reference images are actual character-design references: match Chiikawa and Hachiware identities, tiny round bodies, short limbs, rounded irregular dark ink outlines, black shiny oval eyes and pink blush; warm flat pastel colors with very subtle paper softness. Reference 2's floral background is NOT needed. New adult-reader relatable after-work cafe scene, generous ivory/white margins, polished charming editorial comic, NOT realistic, not human bodies. Chiikawa (white, tiny round ears) wears a cream cardigan; Hachiware (white cat with blue cap-like head/ears and white central face) wears a mint hoodie. Chiikawa seated at cafe table, gazing at smartphone held in little paws, interested but hesitant with tiny worried brows. Hachiware leans gently from beside him to view phone, mouth closed. Small tote with plain badge and a cup, sparse cafe cues, no clutter. Phone contains only abstract card and play-button shapes, no legible fake app text, no logos, prices or ads. Upper quarter has two beautifully readable Korean header lines; below, two rounded speech bubbles BOTH clearly belonging to Chiikawa with tails pointing to him; Hachiware has no speech. One large scene, not a multi-panel grid. Keep bodies and text inside generous safe margins. Calm cream/mint/peach palette, clean open composition.\nText to render exactly:\nHeader: \"AI 카드뉴스·모션그래픽\"\nSubheader: \"강의부터 결제해야 할까?\"\nChiikawa speech bubble 1: \"나도 이런 거 만들고 싶다…\"\nChiikawa speech bubble 2: \"강의부터 들어야 하나?\"\nNo extra text, no numbering, no watermarks. Keep Korean verbatim and large. Draw the actual requested Chiikawa characters from the references, with their core designs recognizable and costume additions scaled to tiny bodies.",
+      "references": [
+        "refer/1116/chikawa.jpg",
+        "refer/1116/chikawa2.jpg"
+      ]
+    },
+    {
+      "file": "raw/01-course-question-v2.png",
+      "prompt": "Edit this illustration with only TWO local changes around smartphone and Chiikawa hands. Keep ALL Korean text, headers, speech bubbles, characters, face proportions, cream cardigan, mint hoodie, warm cafe background, paper texture, composition and colors unchanged. Remove the two dark rear-camera-like circles from the FRONT display at upper left of phone. Make it clearly a front smartphone screen showing simple pastel card shapes and one blank rounded peach application button, NO text or logo on screen. Change Chiikawa hands so one little paw supports phone and the other little paw has a tiny extended pointing finger hovering just ABOVE the blank button, NOT touching, clearly hesitating before applying. A tiny gap between finger and screen must be visible. Slight worried head tilt if needed, no other pose changes. Preserve exact existing Korean text verbatim, add no text. Maintain portrait 4:5.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question.png"
+      ]
+    },
+    {
+      "file": "raw/01-course-question-v3.png",
+      "prompt": "Make a precise local edit of this existing cover. Preserve all Korean text and lettering exactly, all layout, both faces, Hachiware's mint hoodie and cafe background. Only improve Chiikawa's cream CARDIGAN and hovering hand/phone: add an unmistakable cardigan V opening with a visible short front placket and 2 tiny brown buttons below/alongside phone, keep cream knit and small body. Phone screen has ONE pastel thumbnail with tiny play triangle, and ONE separate blank orange rounded application button near bottom; no words, prices, logos, no camera circles. Chiikawa left paw supports phone, right paw with single simple pointing fingertip HOVERS beside the orange button, with visible small empty gap before glass, not touching. This is hesitant before application. Small worried head tilt stays. No other changes, no new text. Portrait 4:5.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question-v2.png"
+      ]
+    },
+    {
+      "file": "raw/02-one-card.png",
+      "prompt": "Generate ONE finished Korean Instagram comic illustration, exact 4:5 portrait intended 1080x1350, illustration-story. Input 1 is the approved episode cover STYLE/COSTUME anchor: match its warm ivory paper, soft peach/mint pastel fills, thick warm dark handdrawn outlines, shiny black oval eyes and pink cheek hatching, tiny round bodies, cafe palette. Inputs 2 and 3 are actual Chiikawa character references; use requested character identities faithfully. Preserve tiny proportions, not human bodies. Chiikawa is white with tiny round ears, cream cardigan; Hachiware white cat with blue cap-like ears/head and central white face, mint hoodie. A sparse after-work cafe wooden table and warm decor, plenty of negative space, one large illustrated scene, safe margins. Korean text must be large and exactly specified. No extra title/header on interior pages, no numbering, logos, watermarks or invented app labels. Recompose scene for this page rather than repeating cover.\nPage 2: Hachiware on the RIGHT gently turns an open laptop toward Chiikawa on LEFT, pointing with a little paw to a single example card on laptop. Chiikawa leans in curiously with relaxed worried brows. Smartphone is placed flat aside. Laptop screen only simple colored picture block, text-like bars and shape; NO readable screen text. Sparse cup. Upper left rounded speech bubble clearly points to Chiikawa; upper right bubble clearly points to Hachiware, with reading order Hachiware first via a slightly higher right bubble. Big visible laptop and action, no screen occlusion by characters.\nText to render exactly:\nHachiware: \"우선 한 장만 바꿔보자.\"\nChiikawa: \"처음부터 안 만들어도 돼?\" Chiikawa cardigan MUST have V opening and visible little brown buttons matching anchor.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question-v3.png",
+        "refer/1116/chikawa.jpg",
+        "refer/1116/chikawa2.jpg"
+      ]
+    },
+    {
+      "file": "raw/03-move-the-text.png",
+      "prompt": "Generate ONE finished Korean Instagram comic illustration, exact 4:5 portrait intended 1080x1350, illustration-story. Input 1 is the approved episode cover STYLE/COSTUME anchor: match its warm ivory paper, soft peach/mint pastel fills, thick warm dark handdrawn outlines, shiny black oval eyes and pink cheek hatching, tiny round bodies, cafe palette. Inputs 2 and 3 are actual Chiikawa character references; use requested character identities faithfully. Preserve tiny proportions, not human bodies. Chiikawa is white with tiny round ears, cream cardigan; Hachiware white cat with blue cap-like ears/head and central white face, mint hoodie. A sparse after-work cafe wooden table and warm decor, plenty of negative space, one large illustrated scene, safe margins. Korean text must be large and exactly specified. No extra title/header on interior pages, no numbering, logos, watermarks or invented app labels. Recompose scene for this page rather than repeating cover.\nPage 3: exactly 3 characters, Chiikawa at left watching with surprised round eyes, Hachiware center-left explaining, Usagi at RIGHT joyfully lifting and sliding a floating card labelled 글자 toward the right. Usagi MUST match rabbit in references: cream-yellow body, TWO very long upright ears with pink inner ears and round belly mark, wears pale yellow hoodie with hood DOWN and small blue-gray headphones around NECK, ears fully inside frame. Three separate conceptual layer cards above cafe table: a picture card labelled 그림 with simple image symbol, a moving text card labelled 글자 held by Usagi, a shape card labelled 도형 with circle/triangle. Hachiware points to card layers; short motion streaks convey Usagi movement. This is a playful explanatory metaphor, not actual app screenshot. Three neat speech bubbles, two belong to Hachiware and one tiny speech bubble belongs to Usagi; tails unambiguous. Use generous clean white space.\nText to render exactly:\nHachiware bubble 1: \"예제에서 글자부터 바꾸고,\"\nUsagi tiny bubble: \"우라!\"\nHachiware bubble 2: \"움직임은 그다음에!\"\nLayer labels, each only once: \"그림\" \"글자\" \"도형\"\nNo other Usagi words, no narrative captions. Match Chiikawa cardigan V opening and tiny brown buttons to anchor. Keep all 3 label words and all 3 bubbles legible, do not add extra labels.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question-v3.png",
+        "refer/1116/chikawa.jpg",
+        "refer/1116/chikawa2.jpg"
+      ]
+    },
+    {
+      "file": "raw/03-move-the-text-v2.png",
+      "prompt": "Edit ONLY the three explanatory cards in lower table area of this comic. Preserve all characters, costumes, headphones, faces, background, speech bubbles, ALL Korean letters and overall composition unchanged. Show the three cards as three layers of ONE composition being separated: move the 그림 picture card toward center-left and 도형 shape card partially overlapping it with offset edges, like a fanned stack. Keep both labels 그림 and 도형 and their picture/shape icons FULLY visible. Add short offset pale outline/edge behind the moving 글자 card so it clearly comes OUT from the same stack toward right in Usagi's hands. The 글자 card remains in rabbit's hands, with existing rightward motion arrow and streaks. Cards should overlap/visually connect rather than sit as three unrelated tiles. No additional text or cards. Preserve exact text: 예제에서 글자부터 바꾸고, / 움직임은 그다음에! / 우라! / 그림 / 도형 / 글자. Keep Korean readable, do not change anything outside the cards and their short motion marks. Portrait 4:5.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/03-move-the-text.png"
+      ]
+    },
+    {
+      "file": "raw/03-move-the-text-v3.png",
+      "prompt": "Precise comic speech-balloon edit ONLY. Keep the entire image and ALL Korean words unchanged, including characters, layered cards, Usagi headphones, clothes, colors, background. The LEFT TOP speech balloon saying \"예제에서 글자부터 바꾸고,\" belongs to CENTER BLUE-CAT HACHIWARE, NOT left white Chiikawa. Erase its current short down-pointing tail. Redraw its tail as a slender curved diagonal extension toward LOWER RIGHT, ending directly ABOVE the center of Hachiware's BLUE head/left blue ear (around x=440 y=610 in this 1080x1350 image), clearly pointing to blue cat. Keep it away from white Chiikawa head. The second balloon saying \"움직임은 그다음에!\" also points to Hachiware, to his RIGHT blue ear, with a short noncrossing tail. Two tails separated, neither points at white round-eared Chiikawa. Usagi \"우라!\" bubble stays untouched. Do not alter a single Korean character or any other artwork. Only correct those speech-tail connections. Portrait 4:5.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/03-move-the-text-v2.png"
+      ]
+    },
+    {
+      "file": "raw/04-learn-where-stuck.png",
+      "prompt": "Generate ONE finished Korean Instagram comic illustration, exact 4:5 portrait intended 1080x1350, illustration-story. Input 1 is the approved episode cover STYLE/COSTUME anchor: match its warm ivory paper, soft peach/mint pastel fills, thick warm dark handdrawn outlines, shiny black oval eyes and pink cheek hatching, tiny round bodies, cafe palette. Inputs 2 and 3 are actual Chiikawa character references; use requested character identities faithfully. Preserve tiny proportions, not human bodies. Chiikawa is white with tiny round ears, cream cardigan; Hachiware white cat with blue cap-like ears/head and central white face, mint hoodie. A sparse after-work cafe wooden table and warm decor, plenty of negative space, one large illustrated scene, safe margins. Korean text must be large and exactly specified. No extra title/header on interior pages, no numbering, logos, watermarks or invented app labels. Recompose scene for this page rather than repeating cover.\nPage 4: exactly 3 characters, Kurimanju LEFT, Chiikawa CENTER, Hachiware RIGHT slightly behind. Kurimanju must match the small beige round character in references with flat dark chestnut-brown cap-like head patch, small rounded ears, subtle small muzzle, wears warm brown knit sweater. NO blue cat ears, NO rabbit ears, NO otter forehead star. Kurimanju puts down mug and offers a tiny BLANK note to Chiikawa. Chiikawa smiles with relief, pulls chair toward laptop. Hachiware nods quietly, no speech. Cozy after-work adult study context, spare table details. Clear two bubbles: upper left to Kurimanju and upper right to Chiikawa. Note has no text. Laptop only abstract colored blocks.\nText to render exactly:\nKurimanju: \"해보고 막힌 곳부터 배우자.\"\nChiikawa: \"뭘 배워야 할지도 보이겠다!\"\nDo not add alcohol or a crossed-out course icon. Chiikawa cardigan V opening and small brown buttons must match anchor. Distinguish Kurimanju's dark brown chestnut patch from Hachiware blue ears.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question-v3.png",
+        "refer/1116/chikawa.jpg",
+        "refer/1116/chikawa2.jpg"
+      ]
+    },
+    {
+      "file": "raw/05-title-first.png",
+      "prompt": "Generate ONE finished Korean Instagram comic illustration, exact 4:5 portrait intended 1080x1350, illustration-story. Input 1 is the approved episode cover STYLE/COSTUME anchor: match its warm ivory paper, soft peach/mint pastel fills, thick warm dark handdrawn outlines, shiny black oval eyes and pink cheek hatching, tiny round bodies, cafe palette. Inputs 2 and 3 are actual Chiikawa character references; use requested character identities faithfully. Preserve tiny proportions, not human bodies. Chiikawa is white with tiny round ears, cream cardigan; Hachiware white cat with blue cap-like ears/head and central white face, mint hoodie. A sparse after-work cafe wooden table and warm decor, plenty of negative space, one large illustrated scene, safe margins. Korean text must be large and exactly specified. No extra title/header on interior pages, no numbering, logos, watermarks or invented app labels. Recompose scene for this page rather than repeating cover.\nPage 5: exactly Chiikawa LEFT, Hachiware center-right behind laptop, Usagi RIGHT. Usagi matches reference rabbit: cream-yellow, TWO long upright pink inner ears, pale yellow hoodie hood DOWN, blue-gray small headphones around NECK, round body. Usagi eagerly points a little paw at title rectangle on laptop while exclaiming. Chiikawa nods confidently, moves one paw TOWARD keyboard without pressing it yet. Hachiware smiles looking at screen. No finished modified title or fake success display. Laptop screen only simple block placeholders; cup aside. Usagi ears safely visible. Three separate unambiguous speech balloons. Bottom has one neat mint pill/footer with next-episode line; large enough to read, inside safe margin.\nText to render exactly:\nUsagi tiny bubble: \"야하!\"\nChiikawa: \"오늘은 제목 하나만!\"\nHachiware: \"다음 편에서 같이 바꿔보자.\"\nBottom footer: \"2회 · 예제에서 문구 하나 바꾸기\"\nNo extra Usagi sentence, no Kurimanju on this page. Input 4 is approved page 3: use it specifically for Usagi's pale yellow hoodie, gray-blue headphones around neck, ear shapes and all three characters' relative scale. Match Chiikawa's V cardigan with little brown buttons. Show Chiikawa and Usagi paws near title but no actual finished title.",
+      "references": [
+        "assets/2026-11-16/ai-motion-ep01/01-course-question-v3.png",
+        "refer/1116/chikawa.jpg",
+        "refer/1116/chikawa2.jpg",
+        "assets/2026-11-16/ai-motion-ep01/03-move-the-text-v3.png"
+      ]
+    }
+  ]
+}

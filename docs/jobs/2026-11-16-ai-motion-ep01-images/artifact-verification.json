@@ -1,0 +1,67 @@
+[
+  {
+    "file": "assets\\2026-11-16\\ai-motion-ep01\\01-course-question-v3.png",
+    "raw_size": [
+      1122,
+      1402
+    ],
+    "final_size": [
+      1080,
+      1350
+    ],
+    "fit_verified": true,
+    "sha256": "8a660c5cb4b8b01b5ff4bd4e1c91f335968294ea82ac0bce056b5c15e0574fa7"
+  },
+  {
+    "file": "assets\\2026-11-16\\ai-motion-ep01\\02-one-card.png",
+    "raw_size": [
+      1122,
+      1402
+    ],
+    "final_size": [
+      1080,
+      1350
+    ],
+    "fit_verified": true,
+    "sha256": "f0841cfba5ec02acd52c63dd6252b13d703bf313869fe0937fd8289a7de20941"
+  },
+  {
+    "file": "assets\\2026-11-16\\ai-motion-ep01\\03-move-the-text-v3.png",
+    "raw_size": [
+      1122,
+      1402
+    ],
+    "final_size": [
+      1080,
+      1350
+    ],
+    "fit_verified": true,
+    "sha256": "9e11c8c067f9a49f368dfe0bfea2f213b5c0e6d367934641d5ab91dd4f6b6891"
+  },
+  {
+    "file": "assets\\2026-11-16\\ai-motion-ep01\\04-learn-where-stuck.png",
+    "raw_size": [
+      1122,
+      1402
+    ],
+    "final_size": [
+      1080,
+      1350
+    ],
+    "fit_verified": true,
+    "sha256": "dcaaf4eb9d1deaaa4186db7af540bbf105093f699a5742cfeaab07927d85e0ee"
+  },
+  {
+    "file": "assets\\2026-11-16\\ai-motion-ep01\\05-title-first.png",
+    "raw_size": [
+      1122,
+      1402
+    ],
+    "final_size": [
+      1080,
+      1350
+    ],
+    "fit_verified": true,
+    "sha256": "7b7052dc454a0ee67bfcb485e0d3e4d96156e29f6797875a9c24c0e85374bb11"
+  }
+]
