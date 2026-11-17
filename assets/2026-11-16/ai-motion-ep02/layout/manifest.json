@@ -1,0 +1,59 @@
+{
+  "source": "E:/Pi_workspace/naver_blog/final/blog/03_plan.html",
+  "images": [
+    {
+      "image": "01-be-specific.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "source_size": [
+        1122,
+        1402
+      ],
+      "fit_without_crop_or_stretch": true,
+      "qa": "qa-01-v2.md"
+    },
+    {
+      "image": "02-specify-layout.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "source_size": [
+        1092,
+        1440
+      ],
+      "fit_without_crop_or_stretch": true,
+      "qa": "qa-02-v1.md"
+    },
+    {
+      "image": "03-fix-the-symptom.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "source_size": [
+        1122,
+        1402
+      ],
+      "fit_without_crop_or_stretch": true,
+      "qa": "qa-03-v1.md"
+    },
+    {
+      "image": "04-review-and-record-v2.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "source_size": [
+        1092,
+        1440
+      ],
+      "fit_without_crop_or_stretch": true,
+      "qa": "qa-04-v2.md"
+    }
+  ],
+  "caption_characters": 306,
+  "published": false
+}
