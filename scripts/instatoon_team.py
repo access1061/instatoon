@@ -105,7 +105,12 @@ def main() -> None:
         prompt += '\n\nQA checklist:\n' + qa_checklist.read_text(encoding='utf-8-sig')
     if args.phase == 'caption':
         for qa_report in sorted(job.glob('qa-*.md')):
-            prompt += f'\n\n{qa_report.name}:\n' + qa_report.read_text(encoding='utf-8-sig')
+            # Full revision histories can exceed Windows' command-line limit.
+            # Captions need the verdict and target; reports remain on disk.
+            qa_text = qa_report.read_text(encoding='utf-8-sig')
+            qa_summary = '\n'.join(line for line in qa_text.splitlines()
+                                   if line.startswith(('판정:', '검수 대상 경로:')))
+            prompt += f'\n\nQA report {qa_report}:\n' + qa_summary
     prompt += '\nIf shell access fails, use apply_patch for the assigned output. If all file tools fail, return the complete artifact text in the final response and explicitly report that saving failed; the caller can save it. Do not ask the user for content already included above.'
     command = ['run', '--workspace', workspace_id, '--provider',
                f'{role["provider"]}/{role["model"]}', '--mode', 'auto-review',

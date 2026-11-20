@@ -1,0 +1,78 @@
+{
+  "images": [
+    {
+      "image": "01-ebook-intro-v3.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "raw_size": [
+        1092,
+        1440
+      ],
+      "qa": "qa-01-v4.md",
+      "verdict": "PASS",
+      "uncropped_fit_verified": true
+    },
+    {
+      "image": "02-first-card.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "raw_size": [
+        1122,
+        1402
+      ],
+      "qa": "qa-02-v1.md",
+      "verdict": "PASS",
+      "uncropped_fit_verified": true
+    },
+    {
+      "image": "03-ask-again-v2.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "raw_size": [
+        1122,
+        1402
+      ],
+      "qa": "qa-03-v2.md",
+      "verdict": "PASS",
+      "uncropped_fit_verified": true
+    },
+    {
+      "image": "04-motion-export.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "raw_size": [
+        1122,
+        1402
+      ],
+      "qa": "qa-04-v1.md",
+      "verdict": "PASS",
+      "uncropped_fit_verified": true
+    },
+    {
+      "image": "05-free-ebook.png",
+      "size": [
+        1080,
+        1350
+      ],
+      "raw_size": [
+        1122,
+        1402
+      ],
+      "qa": "qa-05-v1.md",
+      "verdict": "PASS",
+      "uncropped_fit_verified": true
+    }
+  ],
+  "caption_characters": 304,
+  "caption": "instagram-caption-ebook-chaos-party.md",
+  "reference_anchor": "01-ebook-intro-v3.png",
+  "notes": "독립 시각 QA PASS. 크기 및 비율 유지 전체 보존은 총괄이 Pillow로 별도 검증. 공개 발행은 하지 않음."
+}

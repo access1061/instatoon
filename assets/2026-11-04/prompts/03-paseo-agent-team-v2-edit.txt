@@ -1,0 +1,9 @@
+Edit ONLY the provided page3 image with precise local corrections. Preserve all three characters, their faces, hair, outfits, positions, body proportions, every Korean speech bubble and its text EXACTLY, the overall composition, delicate black line, white background, colors, and large comparison board's two cat pictures.
+Required correction 1: On the small horizontal memo card being passed at lower center, REVERSE the semantic transformation. Draw on LEFT the incorrect long thin-bodied cat, a purple rightward arrow in middle, then on RIGHT a cute round short balanced cat. The intended instruction is LONG INCORRECT CAT → ROUND PROPORTIONATE CAT. No text. Keep the existing card frame and hand positions.
+Required correction 2: In the red-haired artist's large drawing tablet at bottom-right, replace the long thin cat with a shorter, rounder balanced cat being redrawn. It can have very light sketch strokes to show in-progress correction; no stamp, score, checkmark or perfect completion claim. Add a small simple background sketch of grass and a tree behind the cat inside the tablet to show background correction, without obscuring cat.
+Required correction 3: On the large central board, clearly add a small ORANGE outlined rectangle selecting ONLY the sky/landscape background region of the RIGHT game picture, and connect that orange selection with an orange line to the existing orange landscape inset at lower-right. Keep the two PURPLE torso selection boxes and their two purple insets as they are. Ensure the orange line starts from the background selection, not the purple torso.
+Change nothing else, especially preserve Korean exactly:
+"영역별로 차이를 찾고…"
+"ART에게 수정할 점을 전달!"
+"이제 뭘 고칠지 알겠어!"
+Maintain portrait 4:5, no cropping, no added labels or text.
